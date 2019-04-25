@@ -7,7 +7,7 @@ def start_game():
     print("It is partially obscured by overgrowth, but you think it is walkable.")
     print("Do you EXLPORE the new path or CONTINUE on the main trail?")
 
-    choice = input("> ")
+    choice = input("> ").lower()
 
     if "explore" in choice:
         left_trail()
@@ -24,7 +24,7 @@ def main_trail():
     print("Hello, " + name + " I will free you from this forest if you can answer my riddle.")
     print("Do you want to play? Y/N")
 
-    choice = input("> ")
+    choice = input("> ").upper()
 
     if choice == "Y":
         riddle1()
@@ -39,7 +39,7 @@ def left_trail():
     print("You realize you have lost track of time and stop. When you look down there is a circle of mushrooms in front of you.")
     print("Do you PROCEED through the new path or head BACK to the main trail?")
     
-    direction = input("> ")
+    direction = input("> ").lower()
 
     if "proceed" in direction:
         proceed_trail()
@@ -59,7 +59,7 @@ def proceed_trail():
     wish = input("What is your greatest wish, " + name + "? ")
     print("Do you want to play? Y/N")
 
-    choice = input("> ")
+    choice = input("> ").upper()
 
     if choice == "Y":
         print("You will be granted " + wish + " if you are correct.")
@@ -77,7 +77,7 @@ def dead(why):
 def riddle1():
     print("The more you take, the more you leave behind. What is it?")
 
-    answer1 = input("> ")
+    answer1 = input("> ").lower()
 
     if answer1 == "footsteps":
         print("You are correct! You are freed from the forest.")
@@ -88,7 +88,7 @@ def riddle1():
 def riddle2():
     print("What must break before you can use it?")
 
-    answer2 = input("> ")
+    answer2 = input("> ").lower()
 
     if answer2 == "egg":
         print("You are correct! I grant you your wish and free you from the forest!")
