@@ -82,6 +82,9 @@ def riddle1():
     if answer1 == "footsteps":
         print("You are correct! You are freed from the forest.")
         exit(0)
+    elif answer1 == "steps":
+        print("You are correct! You are freed from the forest.")
+        exit(0)
     else:
         dead("Incorrect! Millions of frogs hop onto the trail and carry you into the forest.")
 
